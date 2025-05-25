@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenZo</title>
+    <link rel="icon" href="logo_no_bg.png" type="image/x-icon">
+
+    <style>
+        /* Global styles for the body */
+        body {
+    display: flex;
+    background-color: white; /* Changed from black to white */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+
+        /* Image styling */
+        img {
+            max-width: 100%;  /* Ensures the image width doesn't exceed the container */
+            max-height: 100%; /* Ensures the image height doesn't exceed the container */
+            object-fit: contain;
+    
+        }
+        button {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* Purple background */
+    z-index: 2;
+    padding: 11px 22px;
+    border: solid 2px #8000B3; /* Optional: same as background for seamless look */
+    border-radius: 30px;
+    font-size: 18px;
+    color: #8000B3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: rgba(128, 0, 179, 0.35) 5px 5px 15px;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #8000B3;
+    color: #ffffff;
+    transform: translate(-50%, -50%) scale(1.05);
+    letter-spacing: 2px;
+}
+
+/* Focus effect */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(128, 0, 179, 0.75);
+}
+
+        /* Subtle animation on button load */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        button {
+            animation: fadeIn 1s ease-out; /* Fade-in animation */
+        }
+    </style>
+</head>
+<body>
+    <img src="main logo.png" alt="Logo">
+  <a href="home.html" > <button>Shop Now ➤</button> </a>
+</body>
+</html>

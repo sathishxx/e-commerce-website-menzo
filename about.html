@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>About Us - Menzo Men's Fashion</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="icon" href="secoundry logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+  --primary-color: #5d0082;
+  --accent-color: #e5ac00;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #777;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font: 1em sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.874) 0px 8px 16px -8px;
+  z-index: 1000;
+}
+
+nav .logo img {
+  width: 75px;
+  height: auto;
+  margin-left: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-left: 1000px;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a i {
+  margin-right: 8px;
+  font-size: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--accent-color);
+  width: 0;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+    .content {
+      max-width: 1000px;
+      margin: 150px auto 40px;
+      padding: 20px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2.2em;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      margin-top: 30px;
+      font-size: 1.6em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer .contact-details {
+      margin-top: 15px;
+    }
+
+    footer .contact-details p {
+      margin: 5px 0;
+      font-size: 0.95em;
+    }
+    /* Social icons style */
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: var(--accent-color);
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Same Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="secoundry logo.png" alt="Logo">
+    </div>
+    <ul>
+       <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+    <li><a href="collections.html"><i class="fas fa-th-large"></i> Collections</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contacts</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Page Content -->
+  <div class="content">
+    <h1>About Menzo Men's Fashion</h1>
+
+    <p>At Menzo, we believe fashion is more than just clothing – it's an expression of who you are. Founded in 2025 in the heart of New York City, Menzo Men's Fashion was created to redefine contemporary men's style. Our mission? To bring together classic designs and modern trends, making every man feel confident and stylish.</p>
+
+    <h2>Our Philosophy</h2>
+    <p>We understand that every man has his unique personality and preferences. That’s why Menzo blends versatility and comfort with cutting-edge designs. We use only premium materials to ensure you not only look great but feel great too.</p>
+
+    <h2>What We Offer</h2>
+    <p>From timeless shirts and sleek pants to the latest in accessories and footwear, Menzo’s collection covers every aspect of a modern man's wardrobe. Our carefully curated selections allow you to transition from casual days to formal nights effortlessly.</p>
+
+    <h2>Our Commitment to Quality</h2>
+    <p>Every Menzo piece is crafted with attention to detail. We work with skilled artisans and trusted suppliers to ensure our products meet the highest standards. Our goal is simple: create pieces that stand the test of time.</p>
+
+    <h2>Join the Menzo Movement</h2>
+    <p>We’re not just a brand – we’re a lifestyle. Explore our collections and discover the perfect blend of sophistication, comfort, and individuality. Thank you for choosing Menzo to be a part of your journey.</p>
+  </div>
+
+ <footer>
+  &copy; 2025 Modern E-Commerce. All rights reserved.
+  <div class="contact-details">
+    <p>Email: support@modernecommerce.com</p>
+    <p>Phone: +1-555-123-4567</p>
+    <p>Address: 123 Fashion Ave, New York, NY 10001, USA</p>
+    <p>Hours: Mon-Fri 9am - 6pm (EST)</p>
+  </div>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+
+</body>
+</html>
